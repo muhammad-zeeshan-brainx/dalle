@@ -2,7 +2,7 @@ const { imageGeneratorService } = require('./../services');
 
 const generateImage = async (req, res) => {
   try {
-    console.log('genrate image.....', req.body);
+    console.log('genrate image.......', req.body);
     const { promt } = req.body;
     if (!promt) {
       return res.status(422).json({ error: 'please provide promt' });
