@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const port = process.env.PORT || 3001;
 
-app.use(cors('*'));
+app.use(cors('https://shirt-customizer-lake.vercel'));
 app.use(express.json());
 
 app.use('/api/v1', require('./routes/index.js'));
